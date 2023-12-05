@@ -1,0 +1,388 @@
+{
+  "id": "721f39f8-5632-4162-8ebf-8758607de6c3",
+  "version": "2.0",
+  "name": "Pruebas-Automatizadas",
+  "url": "https://orbi.edu.do",
+  "tests": [{
+    "id": "fbbada54-96e4-4335-87b3-7e1ed2d239ec",
+    "name": "Login-Test",
+    "commands": [{
+      "id": "1f80e6cf-990b-4df9-94e4-80b8fa1a760c",
+      "comment": "",
+      "command": "open",
+      "target": "/orbi/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe374d95-ef8d-4214-a987-0d2d75d55b3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "901x645",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b17103a-fa63-450b-8645-6a9c5349fef5",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNombreUsuario",
+      "targets": [
+        ["id=txtNombreUsuario", "id"],
+        ["name=txtNombreUsuario", "name"],
+        ["css=#txtNombreUsuario", "css:finder"],
+        ["xpath=//input[@id='txtNombreUsuario']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "joelmatos_123@hotmail.com"
+    }, {
+      "id": "9d5dd957-f98f-459a-88dd-07b54573ebb7",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtContrasena",
+      "targets": [
+        ["id=txtContrasena", "id"],
+        ["name=txtContrasena", "name"],
+        ["css=#txtContrasena", "css:finder"],
+        ["xpath=//input[@id='txtContrasena']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "simsjoel456"
+    }, {
+      "id": "d5c848ca-e588-486c-aa34-01554f3b6b18",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnSesion",
+      "targets": [
+        ["id=btnSesion", "id"],
+        ["name=submit", "name"],
+        ["css=#btnSesion", "css:finder"],
+        ["xpath=//button[@id='btnSesion']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9798e746-1728-4b01-9040-de31b0794dee",
+    "name": "Cerrar-Sesion-test",
+    "commands": [{
+      "id": "c45d72d8-98d8-4fa0-86dc-5dbcf4fd0429",
+      "comment": "",
+      "command": "open",
+      "target": "/orbi/seguridad/usuario/inicio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76a0b70d-5cbc-4275-9175-580af9806747",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3adbecd7-db72-469c-a870-6f45a5eea170",
+      "comment": "",
+      "command": "click",
+      "target": "id=cerrar-sesion",
+      "targets": [
+        ["id=cerrar-sesion", "id"],
+        ["linkText=CERRAR SESIÓN", "linkText"],
+        ["css=#cerrar-sesion", "css:finder"],
+        ["xpath=//a[contains(text(),'CERRAR SESIÓN')]", "xpath:link"],
+        ["xpath=//a[@id='cerrar-sesion']", "xpath:attributes"],
+        ["xpath=//div[@id='div-menu']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CERRAR SESIÓN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c779213-4efb-4606-8d1e-b08bf5c7c7fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fast_confirm_proceed",
+      "targets": [
+        ["css=.fast_confirm_proceed", "css:finder"],
+        ["xpath=//div[15]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Si')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "46dc619a-ef92-4494-96c9-3a67f03a26ce",
+    "name": "Pago-en-Linea-test",
+    "commands": [{
+      "id": "001f96cd-445b-4d38-88cc-b6cf9d52972c",
+      "comment": "",
+      "command": "open",
+      "target": "/orbi/seguridad/usuario/inicio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "986339a8-678f-4b68-b080-f11beb9f2c84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5d127df-cb2d-42d9-be3f-d6e60d3c5a3c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=encabezado",
+      "targets": [
+        ["id=encabezado", "id"],
+        ["css=#encabezado", "css:finder"],
+        ["xpath=//img[@id='encabezado']", "xpath:attributes"],
+        ["xpath=//div[@id='div-encabezado']/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d68287-37c8-40c4-96c6-b495eed5042e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MI MENÚ",
+      "targets": [
+        ["linkText=MI MENÚ", "linkText"],
+        ["css=#nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MI MENÚ')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MI MENÚ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f29d5507-fb6d-4291-9ef5-57b0f4ad3352",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Caja",
+      "targets": [
+        ["linkText=Caja", "linkText"],
+        ["css=#mCaja > .fcGris", "css:finder"],
+        ["xpath=//a[contains(text(),'Caja')]", "xpath:link"],
+        ["xpath=//li[@id='mCaja']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Caja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e82e74-a1c7-47ec-ab37-2db9b8dc170f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pago en línea",
+      "targets": [
+        ["linkText=Pago en línea", "linkText"],
+        ["css=.smCaja:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pago en línea')]", "xpath:link"],
+        ["xpath=//li[@id='mCaja']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/orbi/servicio/pagoenlinea')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pago en línea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2e342143-c049-463a-b45e-776906e06725",
+    "name": "Cambio-de-carrera-test",
+    "commands": [{
+      "id": "9baba223-a8a0-4e89-917a-4593685ac379",
+      "comment": "",
+      "command": "open",
+      "target": "/orbi/seguridad/usuario/inicio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "029934fa-4d77-4928-8150-f3966756a449",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce90e7e4-a08c-4f60-8979-7366b3e4f1ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MI MENÚ",
+      "targets": [
+        ["linkText=MI MENÚ", "linkText"],
+        ["css=#nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MI MENÚ')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MI MENÚ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6e75965-41cd-4df7-9942-5f2729c36faf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Solicitud",
+      "targets": [
+        ["linkText=Solicitud", "linkText"],
+        ["css=#mSolicitud > .fcGris", "css:finder"],
+        ["xpath=(//a[contains(text(),'Solicitud')])[5]", "xpath:link"],
+        ["xpath=//li[@id='mSolicitud']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a95008a8-dff0-4726-874c-946bd7f36aa0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cambio Carrera",
+      "targets": [
+        ["linkText=Cambio Carrera", "linkText"],
+        ["css=.smSolicitud:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cambio Carrera')]", "xpath:link"],
+        ["xpath=//li[@id='mSolicitud']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/orbi/solicitud/solicitudcambiocarrera/')]", "xpath:href"],
+        ["xpath=//li[10]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cambio Carrera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "12c96601-00f3-4da8-814f-b7335342088d",
+    "name": "Beca-test",
+    "commands": [{
+      "id": "dac6b846-0654-4d17-986e-d0d99ee002fe",
+      "comment": "",
+      "command": "open",
+      "target": "/orbi/seguridad/usuario/inicio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e97d500-b4bf-483a-99a9-467e3be31578",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f9899ce-8aee-47b3-9b09-d97e3ce8d63c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MI MENÚ",
+      "targets": [
+        ["linkText=MI MENÚ", "linkText"],
+        ["css=#nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MI MENÚ')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MI MENÚ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b7d904-2f8c-4635-9436-b74574ff26e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Beca",
+      "targets": [
+        ["linkText=Beca", "linkText"],
+        ["css=#mBeca > .fcGris", "css:finder"],
+        ["xpath=//a[contains(text(),'Beca')]", "xpath:link"],
+        ["xpath=//li[@id='mBeca']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Beca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19af12fe-b690-43ad-ad0c-5084c8cdbb4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Solicitud Beca",
+      "targets": [
+        ["linkText=Solicitud Beca", "linkText"],
+        ["css=.smBeca:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Solicitud Beca')]", "xpath:link"],
+        ["xpath=//li[@id='mBeca']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:abrirLiveBox(direccionSolicitudBeca, \"Beca\", 670, 970)')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Solicitud Beca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5f6642b0-3071-4ff3-aa24-1ff8c14d9a42",
+    "name": "Evaluacion-test",
+    "commands": [{
+      "id": "e89d752b-2015-4519-ab89-86f61bda1121",
+      "comment": "",
+      "command": "open",
+      "target": "/orbi/seguridad/usuario/inicio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef58f713-d1ea-4430-bb0a-23b1282c1e1d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98d959f2-88d5-4475-8958-636edda1ef4b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MI MENÚ",
+      "targets": [
+        ["linkText=MI MENÚ", "linkText"],
+        ["css=#nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MI MENÚ')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MI MENÚ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fefba425-8489-43ae-8f46-80a4bd5b099e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Evaluación",
+      "targets": [
+        ["linkText=Evaluación", "linkText"],
+        ["css=#mEvaluaci\\F3n > .fcGris", "css:finder"],
+        ["xpath=//a[contains(text(),'Evaluación')]", "xpath:link"],
+        ["xpath=//li[@id='mEvaluación']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Evaluación')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "454ddcc0-eb9b-432a-9e00-434b3496cff7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Evaluación Pendiente",
+      "targets": [
+        ["linkText=Evaluación Pendiente", "linkText"],
+        ["css=.smEvaluaci\\F3n > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Evaluación Pendiente')]", "xpath:link"],
+        ["xpath=//li[@id='mEvaluación']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/orbi/evaluacion/recoleccion/evaluacionPendiente')]", "xpath:href"],
+        ["xpath=//li[6]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Evaluación Pendiente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "01135921-ead1-43c1-b04d-1a49c8f04af0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fbbada54-96e4-4335-87b3-7e1ed2d239ec"]
+  }],
+  "urls": ["https://orbi.edu.do/"],
+  "plugins": []
+}
